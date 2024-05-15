@@ -162,10 +162,10 @@ class KeywordQueryEventListener(EventListener):
 
 
     @staticmethod
-    def _get_action(filename: str, app: str) -> BaseAction:
+    def _get_action(filename: str, command: str) -> BaseAction:
         dirname = KeywordQueryEventListener._get_dirname(filename)
 
-        command = app +  " " + dirname
+        command.replace("%s", dirname)
         return RunScriptAction(command)
 
 

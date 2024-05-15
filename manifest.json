@@ -18,8 +18,8 @@
       "id": "app",
       "type": "input",
       "name": "app",
-      "description": "App that should be used to open the file/directory",
-      "default": "nvim"
+      "description": "App that should be used to open the file/directory (%s is placeholder for the path)",
+      "default": "alacritty -e zsh -c 'neofetch %s; exec zsh' &"
     },
     {
       "id": "search_type",
