@@ -165,7 +165,7 @@ class KeywordQueryEventListener(EventListener):
     def _get_action(filename: str, command: str) -> BaseAction:
         dirname = KeywordQueryEventListener._get_dirname(filename)
 
-        command.replace("%s", dirname)
+        command = command.replace("%s", dirname)
         return RunScriptAction(command)
 
 
