@@ -19,7 +19,7 @@
       "type": "input",
       "name": "command",
       "description": "command that should be used to run input(%s is placeholder for the path)",
-      "default": "alacritty -e zsh -c 'neofetch %s; exec zsh' &"
+      "default": "alacritty -e zsh -c 'nvim %s; exec zsh' &"
     },
     {
       "id": "search_type",
