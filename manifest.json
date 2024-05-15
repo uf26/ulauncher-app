@@ -3,7 +3,7 @@
   "name": "Fuzzy Finder app",
   "description": "Find files and directories and open app",
   "developer_name": "Florian",
-  "icon": "images/sub_icon.png",
+  "icon": "images/sub-icon.png",
   "options": {
     "query_debounce": 0.5
   },
