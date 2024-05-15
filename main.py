@@ -79,7 +79,7 @@ class FuzzyFinderExtension(Extension):
             "result_limit": int(input_preferences["result_limit"]),
             "base_dir": path.expanduser(input_preferences["base_dir"]),
             "ignore_file": path.expanduser(input_preferences["ignore_file"]),
-            "app": input_preferences["app"]
+            "command": input_preferences["command"]
         }
 
         logger.debug("Using user preferences %s", preferences)
@@ -202,10 +202,10 @@ class KeywordQueryEventListener(EventListener):
                 icon="images/sub-icon.png",
                 name=KeywordQueryEventListener._get_display_name(path_name, path_prefix),
                 on_enter=KeywordQueryEventListener._get_action(
-                    path_name, preferences["app"]
+                    path_name, preferences["command"]
                 ),
                 on_alt_enter=KeywordQueryEventListener._get_action(
-                    path_name, preferences["app"]
+                    path_name, preferences["command"]
                 ),
             )
 

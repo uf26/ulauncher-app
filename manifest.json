@@ -1,7 +1,7 @@
 {
   "required_api_version": "2",
-  "name": "Fuzzy Finder app",
-  "description": "Find files and directories and open app",
+  "name": "Fuzzy Finder command",
+  "description": "Find files and directories and runs command",
   "developer_name": "Florian",
   "icon": "images/sub-icon.png",
   "options": {
@@ -11,14 +11,14 @@
     {
       "id": "kw",
       "type": "keyword",
-      "name": "Fuzzy Finder for app",
+      "name": "Fuzzy Finder for command",
       "default_value": "nv"
     },
     {
-      "id": "app",
+      "id": "command",
       "type": "input",
-      "name": "app",
-      "description": "App that should be used to open the file/directory (%s is placeholder for the path)",
+      "name": "command",
+      "description": "command that should be used to run input(%s is placeholder for the path)",
       "default": "alacritty -e zsh -c 'neofetch %s; exec zsh' &"
     },
     {
