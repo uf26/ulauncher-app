@@ -166,7 +166,6 @@ class KeywordQueryEventListener(EventListener):
         dirname = KeywordQueryEventListener._get_dirname(filename)
 
         command = app +  " " + dirname
-        print(command)
         return RunScriptAction(command)
 
 
